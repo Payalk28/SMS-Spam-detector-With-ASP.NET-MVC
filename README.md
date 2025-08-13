@@ -1,47 +1,56 @@
-SMS-Spam-Detector
-📱 SMS Spam Detector – Project Overview
-This project is a full-stack application designed to automatically detect whether an incoming SMS message is spam (unwanted, promotional, or fraudulent) or ham (legitimate). It combines a powerful machine learning model built with Python and a user-friendly web interface created using ASP.NET MVC. This setup is ideal for building a robust and accessible messaging filter.
+# 📱 SMS-Spam-Detector
 
-⚙️ How It Works
-🧹 Data Cleaning: The system's Python backend removes unnecessary columns and cleans textual data for processing.
+## 📦 Project Overview
 
-📊 Vectorization: Messages are converted into a numerical format using CountVectorizer, which allows the algorithm to understand and compare texts.
+This project is a **full-stack application** designed to automatically detect whether an incoming SMS message is **spam** (unwanted, promotional, or fraudulent) or **ham** (legitimate). It combines a powerful **machine learning model built with Python** and a user-friendly **web interface created using ASP.NET MVC**. This setup is ideal for building a robust and accessible messaging filter.
 
-🧠 Model Training: A Multinomial Naive Bayes classifier learns from thousands of labeled SMS messages to recognize spam patterns.
+---
 
-🖥️ Frontend Web App: The ASP.NET MVC application provides a web form where users can input text messages.
+## ⚙️ How It Works
 
-🎯 Live Prediction: The ASP.NET frontend sends the user's message to the Python backend via an API call. The Python model then instantly classifies the message and sends the prediction back to the frontend to be displayed to the user.
+- 🧹 **Data Cleaning**: The system's Python backend removes unnecessary columns and cleans textual data for processing.
 
-🌥️ WordCloud Visualization: Common keywords from spam and ham messages are shown using visual clouds—helpful for spotting patterns.
+- 📊 **Vectorization**: Messages are converted into a numerical format using **CountVectorizer**, which allows the algorithm to understand and compare texts.
 
-📈 Performance
-Training Accuracy: ~99.41%
+- 🧠 **Model Training**: A **Multinomial Naive Bayes** classifier learns from thousands of labeled SMS messages to recognize spam patterns.
 
-Testing Accuracy: ~98.56%
+- 🖥️ **Frontend Web App**: The **ASP.NET MVC application** provides a web form where users can input text messages.
+
+- 🎯 **Live Prediction**: The ASP.NET frontend sends the user's message to the Python backend via an **API call**. The Python model then instantly classifies the message and sends the prediction back to the frontend to be displayed to the user.
+
+- 🌥️ **WordCloud Visualization**: Common keywords from spam and ham messages are shown using visual clouds—helpful for spotting patterns.
+
+---
+
+## 📈 Performance
+
+- **Training Accuracy**: ~99.41%  
+- **Testing Accuracy**: ~98.56%  
 
 The model demonstrates reliable performance even with short and informal text messages.
 
-💡 Why This Project Matters
+---
+
+## 💡 Why This Project Matters
+
 Spam messages can be annoying, misleading, and even dangerous. This full-stack system helps:
 
-🛡️ Protect users from fraud and scams
+- 🛡️ **Protect users from fraud and scams**  
+- 💌 **Improve user experience by reducing message clutter**  
+- 🔍 **Support research and development of smart text filters**
 
-💌 Improve user experience by reducing message clutter
+---
 
-🔍 Support research and development of smart text filters
+## 🔧 Tech Stack
 
-🔧 Tech Stack
-Python 🐍
+- **Python 🐍**  
+- **scikit-learn**  
+- **pandas & numpy**  
+- **matplotlib & wordcloud**  
+- **Jupyter Notebook**  
+- **ASP.NET MVC 🖥️**  
+- **C#**
 
-scikit-learn
+---
 
-pandas & numpy
-
-matplotlib & wordcloud
-
-Jupyter Notebook
-
-ASP.NET MVC 🖥️
-
-C#
+Feel free to fork, clone, and contribute to make this even smarter and more secure!
